@@ -26,6 +26,7 @@ const isClicked = (door) => {
   }
 }
 
+// Check if the door has the chorebot
 const isBot = (door) => {
   if (door.src === botDoorPath) {
     return true;
@@ -43,25 +44,8 @@ const playDoor = (door) => {
   }
 }
 
-// MVP - If/Else Generator (3 possible combinations)
-// const randomChoreDoorGenerator = () => {
-//   choreDoor = Math.floor(Math.random() * numClosedDoors);
-//   if (choreDoor === 0) {
-//     openDoor1 = botDoorPath;
-//     openDoor2 = beachDoorPath;
-//     openDoor3 = spaceDoorPath;
-//   } else if (choreDoor === 1) {
-//     openDoor2 = botDoorPath;
-//     openDoor1 = beachDoorPath;
-//     openDoor3 = spaceDoorPath;
-//   } else {
-//     openDoor3 = botDoorPath;
-//     openDoor1 = beachDoorPath;
-//     openDoor2 = spaceDoorPath;
-//   }
-// }
 
-//Next Steps - Switch Statement Version (6 possible combinations)
+// Randomly choose which door should have the chorebot
 const randomChoreDoorGenerator = () => {
   choreDoor = Math.floor(Math.random() * 6);
   switch (choreDoor) {
@@ -123,8 +107,8 @@ startButton.onclick = () => {
     startRound();
 }
 
+// Reset everything to start a new game
 const startRound = () => {
-  // Reset all the doors to be closed
   door1.src = closedDoorPath;
   door2.src = closedDoorPath;
   door3.src = closedDoorPath;
