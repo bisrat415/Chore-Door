@@ -22,13 +22,13 @@ Chore Door is a game of chance and strategy that will test your memory, reflexes
 
 ## Screenshots
 
-When the game starts: <br>
+When the game starts: <br><br>
 <img src="images/Start_Game.png" width="300" />
 
-When you lose a game: <br>
+When you lose a game: <br><br>
 <img src="images/Lose_Game.png" width="300" />
 
-When you win one round: <br>
+When you win one round: <br><br>
 <img src="images/Win_Game.png" width="300" />
 
 ## Color Reference
